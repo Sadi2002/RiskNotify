@@ -1,0 +1,16 @@
+.hide {
+  display: none;
+}
+
+.log-link {
+  background-color: $normal-green;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  color: $white;
+}
