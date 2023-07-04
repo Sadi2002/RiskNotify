@@ -13,19 +13,3 @@
     opacity: 1;
   }
 }
-
-.to-up {
-  animation: toUp 0.4s;
-  animation-fill-mode: both;
-}
-
-@keyframes toUp {
-  0% {
-    top: 355px;
-    opacity: 1;
-  }
-  100% {
-    top: 300px;
-    opacity: 0;
-  }
-}

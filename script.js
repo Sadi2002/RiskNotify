@@ -1,22 +1,16 @@
-const burger = document.querySelector(
-  ".container__header__navigation--mobile__hamburger-container"
-);
+const burger = document.querySelector(".hamburger");
 const mobileMenu = document.querySelector(
-  ".container__header__navigation--mobile__list"
+  ".container__header__navigation--mobile-box"
 );
 
 const mobileMenuLink = document.querySelectorAll(
   ".container__header__navigation--mobile__list__item__link"
 );
+const mainContainer = document.querySelector(".container");
 
 const toggleMenu = () => {
-  if (mobileMenu.classList.contains("to-up")) {
-    mobileMenu.classList.remove("to-up");
-    mobileMenu.classList.add("to-down");
-  } else {
-    mobileMenu.classList.remove("to-down");
-    mobileMenu.classList.add("to-up");
-  }
+  burger.classList.toggle("is-active");
+  mobileMenu.classList.toggle("is-active");
 };
 
 burger.addEventListener("click", toggleMenu);
