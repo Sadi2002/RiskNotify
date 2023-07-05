@@ -3,6 +3,11 @@
 
   &__header {
     position: relative;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.3s;
+    animation: downNav 1s;
+    animation-fill-mode: both;
   }
 
   &__header__navigation--mobile {
@@ -154,5 +159,16 @@
 @media (min-width: 992px) and (max-width: 1200px) {
   .container__header__navigation--mobile__logo {
     width: 200px;
+  }
+}
+
+@keyframes downNav {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

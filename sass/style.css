@@ -97,6 +97,15 @@ html {
 
 .container__header {
   position: relative;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-animation: downNav 1s;
+          animation: downNav 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .container__header__navigation--mobile {
@@ -285,6 +294,32 @@ html {
   }
 }
 
+@-webkit-keyframes downNav {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes downNav {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .container__header__navigation--desktop {
   position: absolute;
   top: 50%;
@@ -401,6 +436,12 @@ html {
           align-items: center;
   overflow: hidden;
   padding-bottom: 70px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-animation: phoneToLeft 1s 0.2s;
+          animation: phoneToLeft 1s 0.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .bhp-container__phone img {
@@ -458,6 +499,16 @@ html {
   width: 165px;
   position: relative;
   left: -10px;
+}
+
+.bhp-container__left-side {
+  -webkit-animation: leftSideRight 1s 0.2s;
+          animation: leftSideRight 1s 0.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
 }
 
 @media (min-width: 450px) {
@@ -573,12 +624,12 @@ html {
   .bhp-container__title {
     font-size: 56px;
     line-height: 80px;
-    width: 80%;
+    width: 90%;
   }
   .bhp-container__text {
     font-size: 24px;
     line-height: 32px;
-    width: 55%;
+    width: 75%;
   }
   #google-logo,
   #apple-logo {
@@ -602,9 +653,6 @@ html {
   .bhp-container__phone {
     width: 35%;
   }
-  .bhp-container__left-side {
-    width: 60%;
-  }
 }
 
 @media (min-width: 1700px) {
@@ -614,11 +662,60 @@ html {
             justify-content: center;
     padding: 0 150px;
   }
-  .bhp-container__title {
-    width: 90%;
-  }
   .bhp-container__text {
-    width: 75%;
+    margin-bottom: 40px;
+  }
+}
+
+@-webkit-keyframes phoneToLeft {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes phoneToLeft {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes leftSideRight {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes leftSideRight {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
   }
 }
 
