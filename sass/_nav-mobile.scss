@@ -1,8 +1,11 @@
 .container {
   width: 100%;
 
+  &__header {
+    position: relative;
+  }
+
   &__header__navigation--mobile {
-    background-color: red;
     height: 100px;
     padding: 30px 20px;
     display: flex;
@@ -22,7 +25,7 @@
       padding: 30px 20px;
       transition: all 0.4s;
       background-color: #fff;
-      left: 100%;
+      left: -100%;
       top: 100px;
       height: 540px;
       display: flex;
@@ -70,6 +73,10 @@
   background-color: none;
   outline: none;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 
   &__bar,
   &::before,
@@ -84,23 +91,40 @@
     left: 0;
   }
   &::before {
-    top: -10px;
+    top: 15px;
   }
   &::after {
-    top: 10px;
+    bottom: 15px;
   }
 
   &.is-active::before {
     transform: rotate(45deg);
-    top: 0;
+    top: 25px;
   }
 
   &.is-active::after {
     transform: rotate(-45deg);
-    top: 0;
+    top: 25px;
   }
 
   &.is-active &__bar {
     opacity: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .hamburger,
+  .container__header__navigation--mobile-box {
+    display: none;
+  }
+
+  .container__header__navigation--mobile__logo {
+    width: 260px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container__header__navigation--mobile__logo {
+    width: 200px;
   }
 }
