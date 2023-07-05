@@ -1,0 +1,87 @@
+.bhp-container {
+  &__title {
+    font-size: 30px;
+    padding: 20px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    & img {
+      width: 270px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      padding: 0 20px;
+      font-weight: 300;
+      font-size: 18px;
+      color: $normal-blue;
+      line-height: 32px;
+      position: relative;
+      margin-bottom: 30px;
+
+      & img {
+        position: absolute;
+        top: -3%;
+        right: -47%;
+        width: 1000px;
+        z-index: -1;
+        width: 1000px;
+      }
+    }
+  }
+  &__text {
+    display: none;
+  }
+
+  &__download {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+#google-logo,
+#apple-logo {
+  width: 150px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+#google-logo {
+  width: 165px;
+  position: relative;
+  left: -10px;
+}
+
+@media (min-width: 450px) {
+  .bhp-container__phone img {
+    width: 350px;
+  }
+
+  .bhp-container {
+    &__title {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .bhp-container {
+    display: flex;
+
+    &__title {
+      text-align: left;
+      padding-top: 40px;
+    }
+  }
+}

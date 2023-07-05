@@ -20,6 +20,7 @@ body {
   font-family: "Mulish", sans-serif;
   max-width: 1920px;
   margin: 0 auto;
+  height: 500vh;
 }
 
 html {
@@ -47,6 +48,14 @@ html {
           align-items: center;
   border-radius: 60px;
   color: #ffffff;
+}
+
+.blue-text {
+  color: #17c3ce;
+}
+
+.bold-text {
+  font-weight: 700;
 }
 
 .to-down {
@@ -144,6 +153,29 @@ html {
   color: #353e3f;
   font-size: 18px;
   font-weight: 400;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container__header__navigation--mobile-box__link:not(.log):hover {
+  color: #17c3ce;
+}
+
+.container__header__navigation--mobile-box__link:not(.log)::after {
+  position: absolute;
+  content: "";
+  background-color: #17c3ce;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container__header__navigation--mobile-box__link:not(.log):hover::after {
+  width: 25%;
 }
 
 .container__header__navigation--mobile-box__link.log {
@@ -163,6 +195,14 @@ html {
   border-radius: 50px;
   text-transform: uppercase;
   font-size: 16px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container__header__navigation--mobile-box__link.log:hover {
+  background-color: transparent;
+  border: 2px solid #17c3ce;
+  color: #17c3ce;
 }
 
 .hamburger {
@@ -326,6 +366,105 @@ html {
 @media (max-width: 1050px) {
   .container__header__navigation--desktop-box {
     gap: 30px;
+  }
+}
+
+.bhp-container__title {
+  font-size: 30px;
+  padding: 20px;
+  line-height: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.bhp-container__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.bhp-container__phone img {
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.bhp-container__phone__text {
+  padding: 0 20px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #353e3f;
+  line-height: 32px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.bhp-container__phone__text img {
+  position: absolute;
+  top: -3%;
+  right: -47%;
+  width: 1000px;
+  z-index: -1;
+  width: 1000px;
+}
+
+.bhp-container__text {
+  display: none;
+}
+
+.bhp-container__download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+}
+
+#google-logo,
+#apple-logo {
+  width: 150px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+#google-logo {
+  width: 165px;
+  position: relative;
+  left: -10px;
+}
+
+@media (min-width: 450px) {
+  .bhp-container__phone img {
+    width: 350px;
+  }
+  .bhp-container__title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bhp-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bhp-container__title {
+    text-align: left;
+    padding-top: 40px;
   }
 }
 
