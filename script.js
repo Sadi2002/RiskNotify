@@ -8,9 +8,21 @@ const mobileMenuLink = document.querySelectorAll(
 );
 const mainContainer = document.querySelector(".container");
 
+const backTopBtn = document.querySelector("#back-top");
+
 const toggleMenu = () => {
   burger.classList.toggle("is-active");
   mobileMenu.classList.toggle("is-active");
 };
+
+const showBackTop = () => {
+  if (window.scrollY >= 200) {
+    backTopBtn.classList.remove("hidden");
+  } else {
+    backTopBtn.classList.add("hidden");
+  }
+};
+
+window.addEventListener("scroll", showBackTop);
 
 burger.addEventListener("click", toggleMenu);

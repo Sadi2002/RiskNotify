@@ -58,6 +58,10 @@ html {
   font-weight: 700;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .to-down {
   -webkit-animation: toDown 0.4s;
           animation: toDown 0.4s;
