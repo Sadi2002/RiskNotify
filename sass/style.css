@@ -464,8 +464,30 @@ html {
   .bhp-container__phone img {
     width: 350px;
   }
+  .bhp-container__phone img.wave-img {
+    width: 1000px;
+    top: -5%;
+    right: -40%;
+  }
   .bhp-container__title {
     font-size: 36px;
+  }
+}
+
+@media (min-width: 500px) {
+  .bhp-container__phone img.wave-img {
+    right: -20%;
+  }
+  .bhp-container__phone {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 650px) {
+  .bhp-container__phone img.wave-img {
+    width: 1500px;
+    top: -15%;
+    right: -25%;
   }
 }
 
@@ -478,6 +500,125 @@ html {
   .bhp-container__title {
     text-align: left;
     padding-top: 40px;
+  }
+  .bhp-container__phone img.wave-img {
+    display: none;
+  }
+  .bhp-container__phone__text,
+  .bhp-container__download {
+    display: none;
+  }
+  .bhp-container__download-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bhp-container__text {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .bhp-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bhp-container__phone img {
+    position: relative;
+  }
+  .bhp-container__phone {
+    width: 50%;
+  }
+  .bhp-container__left-side {
+    width: 75%;
+    padding: 0 20px;
+  }
+  .bhp-container__title {
+    padding: 40px 0 0;
+    margin-bottom: 20px;
+  }
+  #apple-logo {
+    height: 44px;
+  }
+  .bhp-container__phone img {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .bhp-container__phone img {
+    right: -45px;
+  }
+  .bhp-container__title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bhp-container__title {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .bhp-container__phone img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bhp-container__title {
+    font-size: 56px;
+    line-height: 80px;
+    width: 80%;
+  }
+  .bhp-container__text {
+    font-size: 24px;
+    line-height: 32px;
+    width: 55%;
+  }
+  #google-logo,
+  #apple-logo {
+    width: 250px;
+  }
+  #google-logo {
+    left: -15px;
+  }
+  #apple-logo {
+    height: 65px;
+  }
+  .bhp-container__phone img {
+    width: 500px;
+  }
+  .bhp-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 20px;
+  }
+  .bhp-container__phone {
+    width: 35%;
+  }
+  .bhp-container__left-side {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .bhp-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 150px;
+  }
+  .bhp-container__title {
+    width: 90%;
+  }
+  .bhp-container__text {
+    width: 75%;
   }
 }
 
