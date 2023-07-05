@@ -369,6 +369,10 @@ html {
   }
 }
 
+.bhp-container {
+  margin-bottom: 20px;
+}
+
 .bhp-container__title {
   font-size: 30px;
   padding: 20px;
@@ -392,6 +396,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  padding-bottom: 70px;
 }
 
 .bhp-container__phone img {
@@ -411,11 +416,11 @@ html {
 
 .bhp-container__phone__text img {
   position: absolute;
-  top: -3%;
+  top: -6%;
   right: -47%;
   width: 1000px;
   z-index: -1;
-  width: 1000px;
+  width: 880px;
 }
 
 .bhp-container__text {
@@ -432,6 +437,10 @@ html {
           flex-direction: column;
   width: 100%;
   padding: 0 20px;
+}
+
+.bhp-container__download-desktop {
+  display: none;
 }
 
 #google-logo,
