@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     transition: all 0.3s;
     animation: phoneToLeft 1s 0.2s;
     animation-fill-mode: both;
@@ -220,6 +220,9 @@
   }
   .bhp-container__phone {
     width: 35%;
+  }
+  .bhp-container__left-side {
+    width: 65%;
   }
 }
 

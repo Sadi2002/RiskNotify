@@ -21,6 +21,8 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   height: 500vh;
+  position: relative;
+  z-index: -5;
 }
 
 html {
@@ -437,7 +439,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-animation: phoneToLeft 1s 0.2s;
@@ -655,6 +657,9 @@ html {
   .bhp-container__phone {
     width: 35%;
   }
+  .bhp-container__left-side {
+    width: 65%;
+  }
 }
 
 @media (min-width: 1700px) {
@@ -718,6 +723,70 @@ html {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
     opacity: 1;
+  }
+}
+
+.about-us {
+  padding: 0 20px;
+  position: relative;
+}
+
+.about-us__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about-us__title::after {
+  content: "";
+  background-color: #000000;
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.about-us__text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #353e3f;
+}
+
+.wave-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about-us__text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us__text {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-us__text {
+    font-size: 24px;
+  }
+  .wave-desktop {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: -20%;
+    z-index: -1;
   }
 }
 
