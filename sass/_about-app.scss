@@ -1,0 +1,24 @@
+.about-app {
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 56px;
+    color: $black;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 50px;
+    width: 70%;
+    margin: 0 auto;
+
+    &::after {
+      content: "";
+      background-color: $black;
+      height: 2px;
+      width: 60px;
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

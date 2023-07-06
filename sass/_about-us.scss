@@ -1,8 +1,7 @@
 .about-us {
   padding: 0 20px;
   position: relative;
-  &__box {
-  }
+  margin-bottom: 20px;
 
   &__title {
     text-align: center;
@@ -52,6 +51,7 @@
 @media (min-width: 1400px) {
   .about-us__text {
     font-size: 24px;
+    width: 85%;
   }
 
   .wave-desktop {

@@ -4,7 +4,7 @@ const mobileMenu = document.querySelector(
 );
 
 const mobileMenuLink = document.querySelectorAll(
-  ".container__header__navigation--mobile__list__item__link"
+  ".container__header__navigation--mobile-box__link"
 );
 const mainContainer = document.querySelector(".container");
 
@@ -14,6 +14,13 @@ const toggleMenu = () => {
   burger.classList.toggle("is-active");
   mobileMenu.classList.toggle("is-active");
 };
+
+mobileMenuLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("is-active");
+    burger.classList.remove("is-active");
+  })
+);
 
 const showBackTop = () => {
   if (window.scrollY >= 200) {

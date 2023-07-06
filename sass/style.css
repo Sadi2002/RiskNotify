@@ -729,6 +729,7 @@ html {
 .about-us {
   padding: 0 20px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .about-us__title {
@@ -780,6 +781,7 @@ html {
 @media (min-width: 1400px) {
   .about-us__text {
     font-size: 24px;
+    width: 85%;
   }
   .wave-desktop {
     display: block;
@@ -788,6 +790,30 @@ html {
     left: -20%;
     z-index: -1;
   }
+}
+
+.about-app__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-app__title::after {
+  content: "";
+  background-color: #000000;
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #back-top {
