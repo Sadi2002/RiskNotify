@@ -411,7 +411,7 @@ html {
 .bhp-container {
   margin-bottom: 20px;
   position: relative;
-  z-index: 0;
+  z-index: -1;
 }
 
 .bhp-container__title {
