@@ -795,6 +795,12 @@ html {
   }
 }
 
+@media (min-width: 1700px) {
+  .about-us__text {
+    width: 1300px;
+  }
+}
+
 .about-app {
   margin-bottom: 20px;
 }
