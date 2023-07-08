@@ -21,4 +21,62 @@
       transform: translateX(-50%);
     }
   }
+
+  &__boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 37px;
+    &__box {
+      width: 307px;
+      height: 354px;
+      background-color: #fff;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+      padding: 20px 20px 10px 20px;
+
+      &__title {
+        width: 100%;
+        font-size: 24px;
+        color: #000;
+      }
+
+      &__text {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 300;
+        color: $normal-blue;
+        line-height: 28px;
+      }
+
+      &__img {
+        width: 145px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-app__boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 50px auto 0;
+  }
+}
+
+@media (min-width: 1400px){
+    .about-app__boxes {
+        max-width: 1200px;
+
+        &__box {
+            width: 375px;
+        }
+    }
 }
