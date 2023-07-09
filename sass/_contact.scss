@@ -1,6 +1,7 @@
 .contact {
   padding: 0 30px;
   position: relative;
+  margin-bottom: 40px;
   &__title {
     font-size: 40px;
     line-height: 50px;
@@ -101,6 +102,11 @@
 
         &__link {
           color: $dark-green-h;
+          transition: all 0.3s;
+
+          &:hover {
+            color: $black;
+          }
         }
       }
     }

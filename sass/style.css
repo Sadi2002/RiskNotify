@@ -867,6 +867,7 @@ html {
   padding: 20px 20px 10px 20px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: default;
 }
 
 .about-app__boxes__box__title {
@@ -1232,6 +1233,7 @@ html {
 .contact {
   padding: 0 30px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .contact__title {
@@ -1392,6 +1394,12 @@ html {
 
 .contact__data__box__right-side__link {
   color: #0e757c;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact__data__box__right-side__link:hover {
+  color: #000000;
 }
 
 .contact__big-wave {
@@ -1465,6 +1473,182 @@ html {
   .contact__big-wave {
     width: 3100px;
     top: -95%;
+  }
+}
+
+.copyright {
+  background-color: #15b0b9;
+  padding: 30px;
+}
+
+.copyright__left-side {
+  margin-bottom: 20px;
+}
+
+.copyright__left-side__img {
+  width: 205px;
+  margin-bottom: 20px;
+}
+
+.copyright__left-side__text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.copyright__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.copyright__middle__company, .copyright__middle__help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.copyright__middle__company__title, .copyright__middle__help__title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.copyright__middle__company__link, .copyright__middle__help__link {
+  margin-bottom: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 18px;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.copyright__middle__company__link::after, .copyright__middle__help__link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  background-color: #000000;
+  height: 2px;
+  width: 0%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.copyright__middle__company__link:hover, .copyright__middle__help__link:hover {
+  color: #000000;
+}
+
+.copyright__middle__company__link:hover::after, .copyright__middle__help__link:hover::after {
+  width: 30%;
+}
+
+.copyright__right-side .footer-fb {
+  margin-right: 30px;
+}
+
+.copyright__right-side img {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.copyright__right-side img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (min-width: 575px) {
+  .copyright__middle {
+    gap: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .copyright__middle {
+    gap: 70px;
+    margin-bottom: 0;
+  }
+  .copyright__right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+  }
+  .copyright__right-side .footer-fb {
+    margin-right: 0;
+  }
+  .copyright__left-side {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .copyright {
+    padding-right: 20px;
+  }
+  .copyright__left-side {
+    max-width: 570px;
+  }
+  .copyright__right-side {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .copyright {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 20px;
+  }
+  .copyright__left-side {
+    max-width: 570px;
+  }
+  .copyright__right-side {
+    gap: 30px;
+  }
+  .copyright__middle {
+    min-width: 700px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 150px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .copyright {
+    padding-right: 100px;
   }
 }
 

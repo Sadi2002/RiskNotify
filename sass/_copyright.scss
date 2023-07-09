@@ -1,0 +1,155 @@
+.copyright {
+  background-color: $normal-green-h;
+  padding: 30px;
+
+  &__left-side {
+    margin-bottom: 20px;
+    &__img {
+      width: 205px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 300;
+      color: $white;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+
+    &__company,
+    &__help {
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        color: $white;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+
+      &__link {
+        margin-bottom: 15px;
+        font-weight: 300;
+        color: $white;
+        font-size: 18px;
+        white-space: nowrap;
+        transition: all 0.3s;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: -5px;
+          background-color: $black;
+          height: 2px;
+          width: 0%;
+          transition: all 0.3s;
+        }
+
+        &:hover {
+          color: $black;
+        }
+
+        &:hover::after {
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  &__right-side {
+    & .footer-fb {
+      margin-right: 30px;
+    }
+    & img {
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  .copyright {
+    &__middle {
+      gap: 100px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__middle {
+      gap: 70px;
+      margin-bottom: 0;
+    }
+
+    &__right-side {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      & .footer-fb {
+        margin-right: 0;
+      }
+    }
+
+    &__left-side {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .copyright {
+    padding-right: 20px;
+
+    &__left-side {
+      max-width: 570px;
+    }
+
+    &__right-side {
+      gap: 30px;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .copyright {
+    align-items: flex-end;
+    padding-right: 20px;
+
+    &__left-side {
+      max-width: 570px;
+    }
+
+    &__right-side {
+      gap: 30px;
+    }
+
+    &__middle {
+      min-width: 700px;
+      justify-content: flex-start;
+      gap: 150px;
+    }
+  }
+}
+@media (min-width: 1700px) {
+  .copyright {
+    padding-right: 100px;
+  }
+}
