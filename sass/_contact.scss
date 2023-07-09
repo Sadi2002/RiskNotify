@@ -1,5 +1,6 @@
 .contact {
   padding: 0 30px;
+  position: relative;
   &__title {
     font-size: 40px;
     line-height: 50px;
@@ -65,7 +66,8 @@
   }
 
   &__form {
-    margin-bottom: 60px;
+    max-width: 902px;
+    margin: 0 auto 60px;
   }
 
   &__data {
@@ -96,6 +98,86 @@
           color: $dark-green-h;
         }
       }
+    }
+  }
+
+  &__big-wave {
+    position: absolute;
+    display: none;
+  }
+}
+
+@media (min-width: 575px) {
+  .contact {
+    &__data {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    &__title,
+    &__text {
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .contact {
+    &__form {
+      padding: 50px;
+      background-color: $white;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .contact {
+    &__big-wave {
+      display: block;
+      top: -90%;
+      z-index: -1;
+      left: -69%;
+      width: 2300px;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .contact {
+    &__big-wave {
+      width: 2300px;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .contact {
+    &__big-wave {
+      width: 2600px;
+    }
+  }
+}
+@media (min-width: 1700px) {
+  .contact {
+    &__big-wave {
+      width: 2800px;
+    }
+  }
+}
+@media (min-width: 1800px) {
+  .contact {
+    &__big-wave {
+      width: 2900px;
+    }
+  }
+}
+@media (min-width: 1900px) {
+  .contact {
+    &__big-wave {
+      width: 3100px;
+      top: -95%;
     }
   }
 }
