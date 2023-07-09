@@ -20,7 +20,6 @@ body {
   font-family: "Mulish", sans-serif;
   max-width: 1920px;
   margin: 0 auto;
-  height: 1500vh;
   position: relative;
   z-index: -5;
 }
@@ -1471,7 +1470,7 @@ html {
 
 @media (min-width: 1900px) {
   .contact__big-wave {
-    width: 3100px;
+    width: 2950px;
     top: -95%;
   }
 }
@@ -1650,6 +1649,28 @@ html {
   .copyright {
     padding-right: 100px;
   }
+}
+
+.copyright-bottom {
+  background-color: #15b0b9;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.copyright-bottom__text {
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 16px;
 }
 
 #back-top {
