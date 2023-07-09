@@ -1,0 +1,99 @@
+.download-app {
+  padding: 0 20px;
+  &__install {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      width: 200px;
+      cursor: pointer;
+    }
+
+    &__img[alt="ikonka google"] {
+      width: 230px;
+    }
+  }
+
+  &__title--phone,
+  &__title--desktop {
+    font-size: 48px;
+    line-height: 56px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+
+    &::after,
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $white;
+      height: 2px;
+      width: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -25px;
+    }
+  }
+
+  &__title--desktop {
+    display: none;
+  }
+
+  &__text {
+    color: $white;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 1014px;
+    margin: 0 auto;
+  }
+
+  &__container {
+    background-color: $normal-green;
+    border-radius: 30px;
+    padding: 70px 20px;
+  }
+}
+
+@media (min-width: 575px) {
+  .download-app__install {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .download-app {
+    &__title--desktop {
+      display: block;
+    }
+    &__title--phone {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-app {
+    &__text {
+      margin-bottom: 50px;
+      font-size: 32px;
+      line-height: 37px;
+    }
+    &__install__img {
+      width: 250px;
+    }
+    &__install__img[alt="ikonka google"] {
+      width: 290px;
+    }
+  }
+}
+@media (min-width: 1700px) {
+  .download-app {
+    padding: 0 170px;
+  }
+}

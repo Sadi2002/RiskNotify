@@ -1019,6 +1019,7 @@ html {
 
 .why-we {
   padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 .why-we__title {
@@ -1067,6 +1068,7 @@ html {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 50px;
   }
   .why-we__photo {
     display: block;
@@ -1087,6 +1089,9 @@ html {
 }
 
 @media (min-width: 1200px) {
+  .why-we {
+    margin-bottom: 150px;
+  }
   .why-we__photo {
     width: 40%;
   }
@@ -1101,6 +1106,115 @@ html {
   }
   .why-we__photo img {
     width: 80%;
+  }
+}
+
+.download-app {
+  padding: 0 20px;
+}
+
+.download-app__install {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download-app__install__img {
+  width: 200px;
+  cursor: pointer;
+}
+
+.download-app__install__img[alt="ikonka google"] {
+  width: 230px;
+}
+
+.download-app__title--phone, .download-app__title--desktop {
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.download-app__title--phone::after, .download-app__title--phone::after, .download-app__title--desktop::after, .download-app__title--desktop::after {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  height: 2px;
+  width: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -25px;
+}
+
+.download-app__title--desktop {
+  display: none;
+}
+
+.download-app__text {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 1014px;
+  margin: 0 auto;
+}
+
+.download-app__container {
+  background-color: #17c3ce;
+  border-radius: 30px;
+  padding: 70px 20px;
+}
+
+@media (min-width: 575px) {
+  .download-app__install {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .download-app__title--desktop {
+    display: block;
+  }
+  .download-app__title--phone {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-app__text {
+    margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .download-app__install__img {
+    width: 250px;
+  }
+  .download-app__install__img[alt="ikonka google"] {
+    width: 290px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .download-app {
+    padding: 0 170px;
   }
 }
 
