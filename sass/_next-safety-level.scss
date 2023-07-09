@@ -1,5 +1,6 @@
 .next-safety-level {
   padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 .next-safety {
@@ -48,6 +49,7 @@
 @media (min-width: 768px) {
   .next-safety-level {
     display: flex;
+    margin-bottom: 50px;
   }
   .next-safety__phone {
     width: 58%;
