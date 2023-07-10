@@ -32,7 +32,7 @@
       color: $normal-blue;
       line-height: 32px;
       position: relative;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
 
       & img {
         position: absolute;
@@ -184,6 +184,10 @@
   }
   .bhp-container__phone img {
     width: 400px;
+  }
+
+  .bhp-container {
+    padding: 0 75px;
   }
 }
 @media (min-width: 1400px) {

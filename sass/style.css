@@ -458,7 +458,7 @@ html {
   color: #353e3f;
   line-height: 32px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .bhp-container__phone__text img {
@@ -619,6 +619,9 @@ html {
   }
   .bhp-container__phone img {
     width: 400px;
+  }
+  .bhp-container {
+    padding: 0 75px;
   }
 }
 
@@ -811,6 +814,7 @@ html {
 .about-app {
   margin-bottom: 20px;
   padding: 0 20px;
+  position: relative;
 }
 
 .about-app__title {
@@ -893,6 +897,10 @@ html {
   width: 145px;
 }
 
+.circles {
+  display: none;
+}
+
 @media (min-width: 575px) {
   .about-app__title {
     text-align: center;
@@ -928,6 +936,14 @@ html {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
+  .circles {
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 50px;
+    width: 150px;
+    z-index: -1;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -936,6 +952,24 @@ html {
   }
   .about-app__boxes__box {
     width: 375px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .circles {
+    right: 5%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .circles {
+    right: 7%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .circles {
+    right: 9%;
   }
 }
 
@@ -1013,6 +1047,12 @@ html {
   .next-safety__title,
   .next-safety__text {
     max-width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .next-safety-level {
+    padding: 0 75px;
   }
 }
 
@@ -1108,6 +1148,7 @@ html {
 @media (min-width: 1200px) {
   .why-we {
     margin-bottom: 150px;
+    padding: 0 75px;
   }
   .why-we__photo {
     width: 40%;
@@ -1227,6 +1268,9 @@ html {
 }
 
 @media (min-width: 1200px) {
+  .download-app {
+    padding: 0 75px;
+  }
   .download-app__text {
     margin-bottom: 50px;
     font-size: 32px;

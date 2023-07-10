@@ -69,6 +69,12 @@
     max-width: 80%;
   }
 }
+
+@media (min-width: 1200px) {
+  .next-safety-level {
+    padding: 0 75px;
+  }
+}
 @media (min-width: 1400px) {
   .next-safety-level {
     padding: 0 40px;

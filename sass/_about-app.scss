@@ -1,6 +1,7 @@
 .about-app {
   margin-bottom: 20px;
   padding: 0 20px;
+  position: relative;
   &__title {
     text-align: left;
     font-size: 36px;
@@ -10,7 +11,6 @@
     position: relative;
     margin-bottom: 50px;
     width: 100%;
-   
 
     &::after {
       content: "";
@@ -64,7 +64,11 @@
   }
 }
 
-@media (min-width: 575px){
+.circles {
+  display: none;
+}
+
+@media (min-width: 575px) {
   .about-app__title {
     text-align: center;
 
@@ -96,6 +100,15 @@
       }
     }
   }
+
+  .circles {
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 50px;
+    width: 150px;
+    z-index: -1;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -105,5 +118,21 @@
     &__box {
       width: 375px;
     }
+  }
+}
+
+@media (min-width: 1700px) {
+  .circles {
+    right: 5%;
+  }
+}
+@media (min-width: 1800px) {
+  .circles {
+    right: 7%;
+  }
+}
+@media (min-width: 1900px) {
+  .circles {
+    right: 9%;
   }
 }
