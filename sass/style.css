@@ -419,8 +419,7 @@ html {
   font-size: 30px;
   padding: 20px;
   line-height: 50px;
-  margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
 
 .bhp-container__phone {
@@ -732,7 +731,7 @@ html {
 }
 
 .about-us__title {
-  text-align: center;
+  text-align: left;
   font-size: 36px;
   line-height: 56px;
   color: #000000;
@@ -748,9 +747,7 @@ html {
   width: 60px;
   position: absolute;
   bottom: -25px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 0;
 }
 
 .about-us__text {
@@ -762,6 +759,17 @@ html {
 
 .wave-desktop {
   display: none;
+}
+
+@media (min-width: 575px) {
+  .about-us__title {
+    text-align: center;
+  }
+  .about-us__title::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 @media (min-width: 768px) {
@@ -802,18 +810,18 @@ html {
 
 .about-app {
   margin-bottom: 20px;
+  padding: 0 20px;
 }
 
 .about-app__title {
-  text-align: center;
+  text-align: left;
   font-size: 36px;
   line-height: 56px;
   color: #000000;
   font-weight: 700;
   position: relative;
   margin-bottom: 50px;
-  width: 70%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .about-app__title::after {
@@ -823,9 +831,7 @@ html {
   width: 60px;
   position: absolute;
   bottom: -25px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 0;
 }
 
 .about-app__boxes {
@@ -885,6 +891,17 @@ html {
 
 .about-app__boxes__box__img {
   width: 145px;
+}
+
+@media (min-width: 575px) {
+  .about-app__title {
+    text-align: center;
+  }
+  .about-app__title::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 @media (min-width: 768px) {
@@ -1019,7 +1036,7 @@ html {
 
 .why-we {
   padding: 0 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .why-we__title {
@@ -1691,7 +1708,7 @@ html {
           align-items: center;
   position: fixed;
   right: 20px;
-  bottom: 30px;
+  bottom: 50px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   z-index: 100000;

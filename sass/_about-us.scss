@@ -4,7 +4,7 @@
   margin-bottom: 20px;
 
   &__title {
-    text-align: center;
+    text-align: left;
     font-size: 36px;
     line-height: 56px;
     color: $black;
@@ -19,8 +19,7 @@
       width: 60px;
       position: absolute;
       bottom: -25px;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
     }
   }
 
@@ -36,10 +35,23 @@
   display: none;
 }
 
+@media (min-width: 575px){
+  .about-us__title {
+    text-align: center;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .about-us__text {
     text-align: center;
   }
+
+  
 }
 
 @media (min-width: 1200px) {
